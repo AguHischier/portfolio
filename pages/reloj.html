@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+</head>
+<body background="../images/background2.jpg" class="margin">
+
+     <!--Logo Unraf -->
+  <div>
+    <p>
+      <a title="Unraf" href="https://www.unraf.edu.ar/">
+        <img style="vertical-align: top; margin: 3px;" src="../images/UNRaf.png" alt="UNRaf logo" width="396" height="50">
+      </a>
+    </p>
+  </div>
+
+  &nbsp;
+
+
+    <p id="demo"></p>
+
+<script>
+
+function hora(){
+    var fecha = new Date();
+    var h = m = s = 0;
+    h = fecha.getHours();
+    m = fecha.getMinutes();
+    s = fecha.getSeconds();
+
+    if(h<10) {h = "0" + h;}
+    if(m<10) {m = "0" + m;}
+    if(s<10) {s = "0" + s;}
+
+    document.getElementById("demo").innerHTML = h + ":" + m + ":" + s;
+}
+
+
+hora();
+fin = setInterval(hora, 1000)
+
+
+</script>
+
+<a href="Unidad2.html"><button>Volver</button></a>
+</body>
+</html>

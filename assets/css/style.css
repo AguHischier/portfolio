@@ -22,3 +22,7 @@ em{
 body table{
     text-align: justify;
 }
+
+.respuestas{
+    text-transform: lowercase;
+}

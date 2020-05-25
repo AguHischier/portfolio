@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia!</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+</head>
+<body background="../images/background2.jpg" class="margin"></body>
+
+ <!--Logo Unraf -->
+ <div>
+    <p>
+      <a title="Unraf" href="https://www.unraf.edu.ar/">
+        <img style="vertical-align: top; margin: 3px;" src="../images/UNRaf.png" alt="UNRaf logo" width="396" height="50">
+      </a>
+    </p>
+  </div>
+
+  &nbsp;    
+
+  
+  <!--Aca empieza el script-->
+    <script type="text/javascript">
+    
+    
+    
+        var correctas = 0;
+        var incorrectas = 0;
+
+      //Funcion que almacena las preguntas y las comprueba con las repuestas
+
+        function preguntas (preg, resp){
+            var preg = prompt(preg);
+            
+        if (preg == resp) 
+        {
+            correctas++;
+        }else{
+            incorrectas++;
+        }
+        }
+
+        //Declaracion de preguntas y respuestas correctas y uso de la funcion
+        var preg1 = "¿Cúal es la capital de Paraguay?"
+        var resp1 = "asuncion"
+        preguntas(preg1, resp1);
+
+        var preg2 = "¿Cúal es la capital de Bolivia?"
+        var resp2 = "la paz"
+        preguntas(preg2, resp2);
+
+        var preg3 = "¿Cúal es la capital de Brasil?"
+        var resp3 = "brasilia"
+        preguntas(preg3, resp3);
+
+        var preg4 = "¿Cúal es la capital de Uruguay?"
+        var resp4 = "montevideo"
+        preguntas(preg4, resp4);
+
+        var preg5 = "¿Cúal es la capital de Chile?"
+        var resp5 = "santiago de chile"
+        preguntas(preg5, resp5);
+
+
+    
+        var resultado = "Repuestas correctas " + correctas +"/5";
+        alert(resultado)
+
+        
+    
+
+    
+    
+</script>
+      
+        
+     
+     
+    <h1>Gracias por jugar!</h1>
+    
+    <a href="Unidad2.html"><button>Volver</button></a>
+    
+</body>
+</html>
