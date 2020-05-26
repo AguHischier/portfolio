@@ -23,7 +23,7 @@
 
   
   <!--Aca empieza el script-->
-    <script type="text/javascript">
+    <script type="text/javascript" font style="text-transform: lowercase">
     
     
     
@@ -34,7 +34,7 @@
 
         function preguntas (preg, resp){
             var preg = prompt(preg);
-            
+            var preg = preg.toLowerCase();   //Metodo para convertir todo el texto a minuscula     
         if (preg == resp) 
         {
             correctas++;
